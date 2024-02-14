@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+			text-decoration: none;
+		}
+		.logo{
+			float: left;
+			width: 40%;
+			line-height: 50px;
+			display: flex;
+			align-items: center;
+			font-size: 45px;
+			font-family: algerian;
+			color: darkorange;
+			text-transform: capitalize;
+			font-weight: bolder;
+		}
+		nav{
+			position: fixed;
+			background: darkmagenta;
+			z-index: 10;
+			left: 0;
+			right: 0;
+			top: 0;
+			padding: 0 5%;
+			font-family: initial;
+			height: 50px;
+		}
+		nav ul{
+			float: right;
+			padding: 0;
+			margin: 0;
+			width: 60%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+		}
+		nav ul li{
+			font-weight: bold;
+			padding: 8px 14px;
+			list-style: none;
+			border-radius: 3px;
+		}
+		nav ul li{
+			padding: 8px 13px;
+			border-radius: 4px;
+			text-align: center;
+		}
+		nav ul li:hover{
+			background-color: blue;
+		}
+		nav ul li a{
+			font-weight: bold;
+			color: white;
+			text-align: center;
+			text-transform: uppercase;
+			font-size: 16px;
+		}
+		.active{
+			background-color: blue;
+		}
+		#check{
+			top: -100px;
+			display: none;
+			position: absolute;
+		}
+		.checked{
+			display: none;
+			position: absolute;
+			right: 5%;
+			top: 0.1px;
+		}
+		.line{
+			transform: 0.5s;
+			font-weight: bold;
+			color: white;
+			line-height: 10px;
+			font-size: 40px;
+			height: 8px;
+		}
+		@media(max-width: 952px){
+			.logo{				
+				font-weight: bold;
+				float: none;
+				width: auto;
+				justify-content: center;
+				font-size: 40px;
+				text-transform: capitalize;
+			}
+			nav ul{
+				float: none;
+				position: fixed;
+				justify-content: space-evenly;
+				z-index: 9;
+				left: 0;
+				right: 0;
+				top: 50px;
+				bottom: 100%;
+				height: auto;
+				width: 100%;
+				flex-direction: column;
+				overflow: hidden;
+				background-color: rgba(0, 0, 0, .9);
+				transition: all 0.5s ease-in-out;
+			}
+			nav ul a{
+				font-weight: bold;
+				font-size: 16px;
+			}
+			.checked{
+				cursor: pointer;
+				display: block;
+			}
+			nav :checked ~ ul{
+				bottom: 5%;
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<nav>
+		<div class="logo"><strong>tech travellers</strong></div>
+		<input type="checkbox" id="check">
+		<label class="checked" for="check">
+			<div class="line">_</div>
+			<div class="line">_</div>
+			<div class="line">_</div>
+		</label>
+		<ul>
+			<li class="active"><a href="">home</a></li>
+			<li><a href="">contact</a></li>
+			<li><a href="">services</a></li>
+			<li><a href="">about us</a></li>
+			<li><a href="account/register.php">register</a></li>
+			<li><a href="account/login.php">login</a></li>
+		</ul>
+	</nav>
+</body>
+</html>

@@ -1,0 +1,79 @@
+* { margin: 0px; padding: 0px; }
+body {
+	box-sizing: border-box;
+	height: 100%;
+	font-size: 100%;
+	background: #F8F8FF;
+	text-decoration: none;
+}
+#dash{
+	background-color: darkblue;
+}
+.active a{
+	color: darkblue;
+}
+/* main container*/
+.container{
+	background-color: #AFEDFB;
+	margin-left: 20%;
+	position: fixed;
+	width: 80%;
+	height: 100%;
+	/*overflow: scroll;*/
+}
+.container h4{
+	margin-left: 100px;
+	font-weight: bold;
+	font-size: 25px;
+	font-family: sans-serif;
+	color: rebeccapurple;
+}
+.container h4 strong{
+	color: orange;
+	font-family: Bell MT;
+	font-style: italic;
+}
+.preview{
+	display: grid;
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+	grid-template-columns: auto auto auto auto;
+}
+.card{
+	box-shadow: 5px 3px 10px #888888;
+	background-color: white; 
+	width: 180px; 
+	height: 140px;
+	margin-left: 30px;
+	border-radius: 5px;  
+	border-left: 5px solid lawngreen;
+	position: relative;
+	
+}
+.car-body{
+	float: left;
+}
+.card h4{
+	font-family: sans-serif;
+	text-align: left;
+	color: orangered;
+	font-size: 20px;
+	background-color: greenyellow;
+	margin-left: 0px;
+	text-align: center;
+}
+
+users{
+	color: black;
+	font-size: 50px;
+}
+.card a{
+	font-size: 21px;
+	font-family: calibri;
+	color: darkblue;
+	font-weight: bold;
+	margin-top: 35px;
+	margin-left: px;
+	float: left;
+}
+
